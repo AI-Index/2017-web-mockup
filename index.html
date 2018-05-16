@@ -1,0 +1,141 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+</head>
+<body>
+
+<!-- HTML STRUCTURE -->
+<div class="report-container">
+    <div class="report-header">
+        <h1>AI Index Annual Report: 2016</h1>
+        <div class="line-across"></div>
+    </div>
+
+    <!-- INTRO CONTAINER -->
+    <section class="intro" style="margin-top: 30px;">
+        <h2>What is the AI Index?</h2>
+        <p>
+        Developments in Artificial Intelligence (AI) have captured the interest of investors, policy-makers, and the general public alike. In particular, displays of AI technologies in academia and industry have sparked discussion about potential applications of AI to e-commerce, transportation, agriculture, financial services, healthcare, education, surveillance, warfare and many other industries. If AI is able to transform some or all of these areas, many are asking how these technologies will affect our economy, culture and political structures.
+        </p>
+        <p>
+        Is it reasonable to expect that today’s AI technologies can have such a profound impact on society? If so, it is important to have a strong understanding of the capabilities of today’s AI technology, to analyze the progress of the technology, and to back our claims of the future with strong evidence. Yet, wholistic analyses of the capabilities of AI systems and their progress is noticeably lacking.
+        </p>
+        <p>
+        The AI Index is an effort to track AI technology development and deployment. We have worked with experts in academia, industry and government to identify and organize data that may provide insight into what AI is capable of now, and what we might expect in the near future.
+        </p>
+        <p>
+        In this report, we begin with a summary of high-level findings. We then provide interactive access to the data we have collected and make this data accessible for download. We divide our presentation of this data into two sections: The first displays data about the volume of activity in the field of AI and the second describes progress on range of technical performance measures. Finally, we include expert opinions about what this data reveals.
+        </p>
+    </section>
+    <!--  -->
+
+    <!-- TRENDS CONTAINER -->
+    <section class="trends">
+        <h2>Notable Trends</h2>
+        <p>This report contains data about the virbancy of the AI community and about the technical performance of AI systems. It covers a broad set of metrics that can be difficult to compare. This section of the report provides some editorial commentary about notable trends we have identified in the data. Later sections present the data in more raw form and provide access to download the data.</p>
+        <div class="trends-container">
+            <div class="trends-left-card"></div>
+            <div class="trends-right-card"></div>
+        </div>
+    </section>
+    <!--  -->
+
+    <!-- INDICES CONTAINER -->
+    <section class="indices">
+    <section class="volume-index">
+        <h2>Volume of Activity Index</h2>
+        <h3>Long Term Trends</h3>
+        <div class="card">
+            <div class="volume-top">
+                <div class="metric-header child-pad-14">
+                    <div>Metric</div>
+                </div>
+                <div class="data-header">Data</div>
+            </div>
+            <div class=volume-middle>
+                <div class="card-sidebar">
+                    <ol id=volume-metric-list>
+                        <li id=volume class="selected">Activity Index</li>
+                        <li id=publication>AI Publications</li>
+                        <li id=conference>AI Conferences</li>
+                        <li id=venture>Venture Capital</li>
+                        <li id=shipments>Robotic Shipments</li>
+                        <li id=media>Public Media</li>
+                    </ol>
+                </div>
+                <div class="volume-data">
+                    <div class="dummy-chart-container">
+                        <img id=volume-metric-image class="chart-image" src="img/VolumeIndex.png"/>
+                        <!-- <div class="dummy-chart"> -->
+                            <!-- <canvas id="dummy-chart"></canvas> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="volume-bottom">
+                <div style="display: flex; align-items: center; height: 40px; padding-left: 14px;">
+                    <div id='volume-metric-title' class="metric-title">Activity Index</div>
+                    <div class="download-button">Download Data</div>
+                </div>
+                <div id="volume-metric-description" class="metric-description">This is the highest level “Volume of Activity” metric, combining sub-indices of activty in areas academia, industry, government and public media. It is calculated by taking a weighted sum of the sub-indices, where the weights given to each sub-index are set by hand by the AI Index team.</div>
+            </div>
+            <div></div>
+        </div>
+    </section>
+    <section class="perf-index">
+        <h2>Technical Performance Index</h2>
+        <!-- <h3></h3> -->
+        <div class="card">
+            <div class="tech-top">
+                <div class="metric-header child-pad-14">
+                    <div>Metric</div>
+                </div>
+                <div class="data-header">Data</div>
+            </div>
+            <div class=tech-middle>
+                <div class="card-sidebar">
+                    <ol id=tech-metric-list>
+                        <li id=vision class="selected">Visual Perception</li>
+                        <li id=speech>Speech Recognition</li>
+                        <li id=nlu>Language Understanding</li>
+                        <li id=mt>Machine Translation</li>
+                        <li id=sat>Satisfiability</li>
+                        <li id=tp>Theorem Proving</li>
+                    </ol>
+                </div>
+                <div class="tech-data">
+                    <div class="dummy-chart-container">
+                        <img id=tech-metric-image class="chart-image" src="img/Vision.png"/>
+                        <!-- <div class="dummy-chart"> -->
+                            <!-- <canvas id="dummy-chart"></canvas> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="tech-bottom">
+                <div style="display: flex; align-items: center; height: 40px; padding-left: 14px;">
+                    <div id='tech-metric-title' class="metric-title">Visual Perception</div>
+                    <div class="download-button">Download Data</div>
+                </div>
+                <div id="tech-metric-description" class="metric-description">This is the highest level “Volume of Activity” metric, combining sub-indices of activty in areas academia, industry, government and public media. It is calculated by taking a weighted sum of the sub-indices, where the weights given to each sub-index are set by hand by the AI Index team.</div>
+            </div>
+            <div></div>
+        </div>
+    </section>
+    </section>
+    <!--  -->
+
+    <!-- EXPERT COMMENTARY CONTAINER -->
+    <section class="expert">
+        <h2>Expert Commentary</h2>
+        <div style='font-size: 14px;'>Experts have opinions.</div>
+    </section>
+</div>
+<!--  -->
+
+<!-- CHART SCRIPT & DATA -->
+<script src="chart-loader.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

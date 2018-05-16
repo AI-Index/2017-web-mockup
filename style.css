@@ -1,0 +1,164 @@
+html {
+    font-family: Lucida Grande;
+    font-size: 20px;
+}
+
+section {
+    padding-bottom: 16px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: normal;
+    margin-bottom: 36px;
+}
+
+p {
+    margin-top: 0 20px;
+}
+
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.report-container {
+    width: 1024px;
+    position: relative;
+    margin: auto;
+    margin-top: 36px;
+}
+
+.report-header {
+    box-sizing: border-box;
+}
+
+.line-across {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+/*VOLUME*/
+.card {
+    /*height: 450px;*/
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    border: 1px solid #CFCFCF;
+    width: 100%;
+
+    font-size: 12px;
+}
+.volume-top, .tech-top {
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #CFCFCF;
+    display: flex;
+    align-items: center;
+}
+.child-pad-14 * {
+    padding-left: 14px;
+}
+.metric-header {
+    box-sizing: border-box;
+    border-right: 1px solid #CFCFCF;
+    font-weight: bold;
+    height: 100%;
+    width: 190px;
+    display: flex;
+    align-items: center;
+}
+.data-header {
+    font-weight: bold;
+    /*width: 70%;*/
+    width: 100%;
+    text-align: center;
+}
+
+.volume-middle, .tech-middle {
+    display: flex;
+    height: 300px;
+    width: 100%;
+}
+.card-sidebar {
+    box-sizing: border-box;
+    border-right: 1px solid #CFCFCF;
+    border-bottom: 1px solid #CFCFCF;
+
+    height: 100%;
+    /*width: 30%;*/
+    width: 190px;
+    overflow: scroll;
+}
+.card-sidebar li {
+    box-sizing: border-box;
+    border-bottom: 1px solid #CFCFCF;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+
+    cursor: pointer;
+}
+.selected {
+    font-weight: bold;
+    background-color: #CFCFCF;
+}
+
+.volume-data, .tech-data {
+    box-sizing: border-box;
+    border-bottom: 1px solid #CFCFCF;
+
+    /*width: 70%;*/
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.dummy-chart {
+    width: 200px;
+    height: 200px;
+}
+.chart-image {
+    max-width: 600px;
+    max-height: 250px;
+}
+.volume-bottom, .tech-bottom {
+    height: 110px;
+}
+.metric-title {
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-right: 5px;
+}
+.download-button {
+    color: #CFCFCF;
+    border: 1px solid #CFCFCF;
+    border-radius: 4px;
+    margin-left: 5px;
+    width: 96px;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.metric-description {
+    padding-left: 14px;
+    /*width: 836px;*/
+    width: 95%;
+}

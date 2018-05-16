@@ -1,0 +1,1 @@
+An early prototype of what the AI Index might produce, created in 2017 before an annual report had been decided on. Kept for archiving.
